@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA2D506A23AB810000B906B2 /* FastColors WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DA2D506923AB810000B906B2 /* FastColors WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA2D507023AB810000B906B2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2D506E23AB810000B906B2 /* Interface.storyboard */; };
+		DA2D507223AB810200B906B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2D507123AB810200B906B2 /* Assets.xcassets */; };
+		DA2D507923AB810200B906B2 /* FastColors WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA2D507823AB810200B906B2 /* FastColors WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA2D507E23AB810200B906B2 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D507D23AB810200B906B2 /* InterfaceController.swift */; };
+		DA2D508023AB810200B906B2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D507F23AB810200B906B2 /* ExtensionDelegate.swift */; };
+		DA2D508223AB810300B906B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2D508123AB810300B906B2 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA2D506B23AB810000B906B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2D505F23AB810000B906B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA2D506823AB810000B906B2;
+			remoteInfo = "FastColors WatchKit App";
+		};
+		DA2D507A23AB810200B906B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2D505F23AB810000B906B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA2D507723AB810200B906B2;
+			remoteInfo = "FastColors WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA2D508923AB810300B906B2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DA2D507923AB810200B906B2 /* FastColors WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2D508D23AB810300B906B2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DA2D506A23AB810000B906B2 /* FastColors WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DA2D506523AB810000B906B2 /* FastColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2D506923AB810000B906B2 /* FastColors WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FastColors WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2D506F23AB810000B906B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DA2D507123AB810200B906B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA2D507323AB810200B906B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA2D507823AB810200B906B2 /* FastColors WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FastColors WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2D507D23AB810200B906B2 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DA2D507F23AB810200B906B2 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DA2D508123AB810300B906B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA2D508323AB810300B906B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA2D507523AB810200B906B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA2D505E23AB810000B906B2 = {
+			isa = PBXGroup;
+			children = (
+				DA2D506D23AB810000B906B2 /* FastColors WatchKit App */,
+				DA2D507C23AB810200B906B2 /* FastColors WatchKit Extension */,
+				DA2D506623AB810000B906B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA2D506623AB810000B906B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA2D506523AB810000B906B2 /* FastColors.app */,
+				DA2D506923AB810000B906B2 /* FastColors WatchKit App.app */,
+				DA2D507823AB810200B906B2 /* FastColors WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA2D506D23AB810000B906B2 /* FastColors WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				DA2D506E23AB810000B906B2 /* Interface.storyboard */,
+				DA2D507123AB810200B906B2 /* Assets.xcassets */,
+				DA2D507323AB810200B906B2 /* Info.plist */,
+			);
+			path = "FastColors WatchKit App";
+			sourceTree = "<group>";
+		};
+		DA2D507C23AB810200B906B2 /* FastColors WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DA2D507D23AB810200B906B2 /* InterfaceController.swift */,
+				DA2D507F23AB810200B906B2 /* ExtensionDelegate.swift */,
+				DA2D508123AB810300B906B2 /* Assets.xcassets */,
+				DA2D508323AB810300B906B2 /* Info.plist */,
+			);
+			path = "FastColors WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA2D506423AB810000B906B2 /* FastColors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2D508E23AB810300B906B2 /* Build configuration list for PBXNativeTarget "FastColors" */;
+			buildPhases = (
+				DA2D506323AB810000B906B2 /* Resources */,
+				DA2D508D23AB810300B906B2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA2D506C23AB810000B906B2 /* PBXTargetDependency */,
+			);
+			name = FastColors;
+			productName = FastColors;
+			productReference = DA2D506523AB810000B906B2 /* FastColors.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		DA2D506823AB810000B906B2 /* FastColors WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2D508A23AB810300B906B2 /* Build configuration list for PBXNativeTarget "FastColors WatchKit App" */;
+			buildPhases = (
+				DA2D506723AB810000B906B2 /* Resources */,
+				DA2D508923AB810300B906B2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA2D507B23AB810200B906B2 /* PBXTargetDependency */,
+			);
+			name = "FastColors WatchKit App";
+			productName = "FastColors WatchKit App";
+			productReference = DA2D506923AB810000B906B2 /* FastColors WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DA2D507723AB810200B906B2 /* FastColors WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2D508623AB810300B906B2 /* Build configuration list for PBXNativeTarget "FastColors WatchKit Extension" */;
+			buildPhases = (
+				DA2D507423AB810200B906B2 /* Sources */,
+				DA2D507523AB810200B906B2 /* Frameworks */,
+				DA2D507623AB810200B906B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FastColors WatchKit Extension";
+			productName = "FastColors WatchKit Extension";
+			productReference = DA2D507823AB810200B906B2 /* FastColors WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA2D505F23AB810000B906B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Radu Albastroiu";
+				TargetAttributes = {
+					DA2D506423AB810000B906B2 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					DA2D506823AB810000B906B2 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					DA2D507723AB810200B906B2 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = DA2D506223AB810000B906B2 /* Build configuration list for PBXProject "FastColors" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA2D505E23AB810000B906B2;
+			productRefGroup = DA2D506623AB810000B906B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA2D506423AB810000B906B2 /* FastColors */,
+				DA2D506823AB810000B906B2 /* FastColors WatchKit App */,
+				DA2D507723AB810200B906B2 /* FastColors WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA2D506323AB810000B906B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2D506723AB810000B906B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2D507223AB810200B906B2 /* Assets.xcassets in Resources */,
+				DA2D507023AB810000B906B2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2D507623AB810200B906B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2D508223AB810300B906B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA2D507423AB810200B906B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2D508023AB810200B906B2 /* ExtensionDelegate.swift in Sources */,
+				DA2D507E23AB810200B906B2 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA2D506C23AB810000B906B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA2D506823AB810000B906B2 /* FastColors WatchKit App */;
+			targetProxy = DA2D506B23AB810000B906B2 /* PBXContainerItemProxy */;
+		};
+		DA2D507B23AB810200B906B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA2D507723AB810200B906B2 /* FastColors WatchKit Extension */;
+			targetProxy = DA2D507A23AB810200B906B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA2D506E23AB810000B906B2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA2D506F23AB810000B906B2 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA2D508423AB810300B906B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA2D508523AB810300B906B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA2D508723AB810300B906B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F62WGL23P;
+				INFOPLIST_FILE = "FastColors WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ducu.FastColors.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		DA2D508823AB810300B906B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F62WGL23P;
+				INFOPLIST_FILE = "FastColors WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ducu.FastColors.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		DA2D508B23AB810300B906B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F62WGL23P;
+				IBSC_MODULE = FastColors_WatchKit_Extension;
+				INFOPLIST_FILE = "FastColors WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ducu.FastColors.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		DA2D508C23AB810300B906B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F62WGL23P;
+				IBSC_MODULE = FastColors_WatchKit_Extension;
+				INFOPLIST_FILE = "FastColors WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ducu.FastColors.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		DA2D508F23AB810300B906B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7F62WGL23P;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ducu.FastColors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DA2D509023AB810300B906B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7F62WGL23P;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ducu.FastColors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA2D506223AB810000B906B2 /* Build configuration list for PBXProject "FastColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2D508423AB810300B906B2 /* Debug */,
+				DA2D508523AB810300B906B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2D508623AB810300B906B2 /* Build configuration list for PBXNativeTarget "FastColors WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2D508723AB810300B906B2 /* Debug */,
+				DA2D508823AB810300B906B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2D508A23AB810300B906B2 /* Build configuration list for PBXNativeTarget "FastColors WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2D508B23AB810300B906B2 /* Debug */,
+				DA2D508C23AB810300B906B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2D508E23AB810300B906B2 /* Build configuration list for PBXNativeTarget "FastColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2D508F23AB810300B906B2 /* Debug */,
+				DA2D509023AB810300B906B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA2D505F23AB810000B906B2 /* Project object */;
+}
