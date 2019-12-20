@@ -1,26 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8pH-el-N42">
     <device id="watch44"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
-            <objects>
-                <controller fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FastColors_WatchKit_App" customModuleProvider="target">
-                    <items>
-                        <button width="1" alignment="left" title="Start" id="aiS-Xw-reG">
-                            <connections>
-                                <segue destination="8pH-el-N42" kind="push" id="gYy-Ru-g1D"/>
-                            </connections>
-                        </button>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="-195" y="32"/>
-        </scene>
         <!--Game Controller-->
         <scene sceneID="I4f-7W-U8S">
             <objects>
@@ -51,18 +36,29 @@
                         </group>
                         <group width="1" height="0.5" alignment="left" id="ZnZ-hw-Vtd">
                             <items>
-                                <button width="0.5" height="1" alignment="left" title="Button" id="aYM-FT-0Sk"/>
-                                <button width="0.5" height="1" alignment="left" title="Button" id="wMC-Gl-kbP"/>
+                                <button width="0.5" height="1" alignment="left" title="Button" id="aYM-FT-0Sk">
+                                    <connections>
+                                        <action selector="LeftButtonPressed" destination="8pH-el-N42" id="hMd-v9-W9P"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="Button" id="wMC-Gl-kbP">
+                                    <connections>
+                                        <action selector="RightButtonPressed" destination="8pH-el-N42" id="wt1-PV-NvG"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                     </items>
                     <connections>
                         <outlet property="LeftButton" destination="aYM-FT-0Sk" id="gSR-Nj-hpH"/>
                         <outlet property="RightButton" destination="wMC-Gl-kbP" id="g6D-rw-zuG"/>
+                        <outlet property="ScoreLabel" destination="nPq-Zw-9BL" id="YYK-sT-SHa"/>
+                        <outlet property="Timer" destination="NVu-lO-dG0" id="TqP-Z0-FNh"/>
+                        <outlet property="TopLabel" destination="egL-08-gPY" id="NOf-28-TKI"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="111.60869565217391" y="31.875"/>
+            <point key="canvasLocation" x="97" y="49"/>
         </scene>
     </scenes>
 </document>
