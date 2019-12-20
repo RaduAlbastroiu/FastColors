@@ -21,10 +21,10 @@
             </objects>
             <point key="canvasLocation" x="-195" y="32"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Game Controller-->
         <scene sceneID="I4f-7W-U8S">
             <objects>
-                <controller fullScreen="YES" id="8pH-el-N42">
+                <controller fullScreen="YES" id="8pH-el-N42" customClass="GameController" customModule="FastColors_WatchKit_Extension">
                     <items>
                         <group width="1" height="0.5" alignment="left" layout="vertical" id="3yT-ur-GC0">
                             <items>
@@ -56,6 +56,10 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="LeftButton" destination="aYM-FT-0Sk" id="gSR-Nj-hpH"/>
+                        <outlet property="RightButton" destination="wMC-Gl-kbP" id="g6D-rw-zuG"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="111.60869565217391" y="31.875"/>

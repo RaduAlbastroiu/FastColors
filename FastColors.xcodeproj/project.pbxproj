@@ -14,6 +14,7 @@
 		DA2D507E23AB810200B906B2 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D507D23AB810200B906B2 /* InterfaceController.swift */; };
 		DA2D508023AB810200B906B2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D507F23AB810200B906B2 /* ExtensionDelegate.swift */; };
 		DA2D508223AB810300B906B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2D508123AB810300B906B2 /* Assets.xcassets */; };
+		DA2D509423AD317C00B906B2 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D509323AD317C00B906B2 /* GameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		DA2D507F23AB810200B906B2 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		DA2D508123AB810300B906B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2D508323AB810300B906B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA2D509323AD317C00B906B2 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				DA2D507F23AB810200B906B2 /* ExtensionDelegate.swift */,
 				DA2D508123AB810300B906B2 /* Assets.xcassets */,
 				DA2D508323AB810300B906B2 /* Info.plist */,
+				DA2D509323AD317C00B906B2 /* GameController.swift */,
 			);
 			path = "FastColors WatchKit Extension";
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2D508023AB810200B906B2 /* ExtensionDelegate.swift in Sources */,
+				DA2D509423AD317C00B906B2 /* GameController.swift in Sources */,
 				DA2D507E23AB810200B906B2 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
