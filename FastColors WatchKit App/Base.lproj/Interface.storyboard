@@ -11,37 +11,19 @@
             <objects>
                 <controller fullScreen="YES" id="8pH-el-N42" customClass="GameController" customModule="FastColors_WatchKit_Extension">
                     <items>
-                        <group width="1" height="0.5" alignment="left" layout="vertical" id="3yT-ur-GC0">
+                        <group width="1" height="0.29999999999999999" alignment="left" layout="vertical" id="3yT-ur-GC0">
                             <items>
-                                <group width="1" height="0.5" alignment="left" id="q22-4c-7kB">
-                                    <items>
-                                        <label alignment="center" verticalAlignment="center" text="ColorLabel" id="egL-08-gPY"/>
-                                    </items>
-                                </group>
-                                <group width="1" height="0.5" alignment="left" id="M2h-rU-hOY">
-                                    <items>
-                                        <group width="0.5" height="0.90000000000000002" alignment="left" id="nPq-Zw-9BL">
-                                            <items>
-                                                <label alignment="center" verticalAlignment="center" text="ScoreLabel" id="JzW-bE-GLP"/>
-                                            </items>
-                                        </group>
-                                        <group width="0.5" height="0.90000000000000002" alignment="left" id="38R-bT-lMR">
-                                            <items>
-                                                <timer alignment="center" verticalAlignment="center" id="NVu-lO-dG0"/>
-                                            </items>
-                                        </group>
-                                    </items>
-                                </group>
+                                <label alignment="center" verticalAlignment="center" text="ColorLabel" id="egL-08-gPY"/>
                             </items>
                         </group>
-                        <group width="1" height="0.5" alignment="left" id="ZnZ-hw-Vtd">
+                        <group width="1" height="0.59999999999999998" alignment="left" id="ZnZ-hw-Vtd">
                             <items>
-                                <button width="0.5" height="1" alignment="left" title="Button" id="aYM-FT-0Sk">
+                                <button width="0.5" widthAdjustment="-1" height="0.90000000000000002" alignment="left" verticalAlignment="center" title="Button" id="aYM-FT-0Sk">
                                     <connections>
                                         <action selector="LeftButtonPressed" destination="8pH-el-N42" id="hMd-v9-W9P"/>
                                     </connections>
                                 </button>
-                                <button width="0.5" height="1" alignment="left" title="Button" id="wMC-Gl-kbP">
+                                <button width="0.5" widthAdjustment="-1" height="0.90000000000000002" alignment="right" verticalAlignment="center" title="Button" id="wMC-Gl-kbP">
                                     <connections>
                                         <action selector="RightButtonPressed" destination="8pH-el-N42" id="wt1-PV-NvG"/>
                                     </connections>
@@ -52,8 +34,6 @@
                     <connections>
                         <outlet property="LeftButton" destination="aYM-FT-0Sk" id="gSR-Nj-hpH"/>
                         <outlet property="RightButton" destination="wMC-Gl-kbP" id="g6D-rw-zuG"/>
-                        <outlet property="ScoreLabel" destination="nPq-Zw-9BL" id="YYK-sT-SHa"/>
-                        <outlet property="Timer" destination="NVu-lO-dG0" id="TqP-Z0-FNh"/>
                         <outlet property="TopLabel" destination="egL-08-gPY" id="NOf-28-TKI"/>
                     </connections>
                 </controller>
@@ -67,17 +47,17 @@
                     <items>
                         <group width="1" height="0.5" alignment="left" id="oHL-tM-QcJ">
                             <items>
-                                <button width="0.5" height="1" alignment="left" id="Eoh-EC-jEw">
+                                <button width="0.5" widthAdjustment="-3" height="1" heightAdjustment="-2" alignment="left" id="Eoh-EC-jEw">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="font" type="system" pointSize="120"/>
+                                    <fontDescription key="font" type="system" pointSize="30"/>
                                     <connections>
                                         <action selector="redTapped" destination="rBc-hR-NRT" id="I7G-Xx-ZOb"/>
                                     </connections>
                                 </button>
-                                <button width="0.5" height="1" alignment="left" id="lqb-Pr-Ji8">
+                                <button width="0.5" widthAdjustment="-3" height="1" heightAdjustment="-2" alignment="right" id="lqb-Pr-Ji8">
                                     <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="font" type="system" pointSize="120"/>
+                                    <fontDescription key="font" type="system" pointSize="30"/>
                                     <connections>
                                         <action selector="yellowTapped" destination="rBc-hR-NRT" id="OGG-jv-SSX"/>
                                     </connections>
@@ -86,14 +66,16 @@
                         </group>
                         <group width="1" height="0.5" alignment="left" id="e5K-nG-O5U">
                             <items>
-                                <button width="0.5" height="1" alignment="left" id="ko5-sW-yYz">
+                                <button width="0.5" widthAdjustment="-3" height="1" heightAdjustment="-2" alignment="left" verticalAlignment="bottom" id="ko5-sW-yYz">
                                     <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="30"/>
                                     <connections>
                                         <action selector="greenTapped" destination="rBc-hR-NRT" id="QF4-p5-2RH"/>
                                     </connections>
                                 </button>
-                                <button width="0.5" height="1" alignment="left" id="31I-bU-Vkv">
+                                <button width="0.5" widthAdjustment="-3" height="1" heightAdjustment="-2" alignment="right" verticalAlignment="bottom" id="31I-bU-Vkv">
                                     <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="30"/>
                                     <connections>
                                         <action selector="blueTapped" destination="rBc-hR-NRT" id="vtL-kw-p6Z"/>
                                     </connections>
@@ -101,6 +83,12 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="blue" destination="31I-bU-Vkv" id="B10-DT-1qg"/>
+                        <outlet property="green" destination="ko5-sW-yYz" id="pUn-g3-qMQ"/>
+                        <outlet property="red" destination="Eoh-EC-jEw" id="VC1-SR-Ox1"/>
+                        <outlet property="yellow" destination="lqb-Pr-Ji8" id="UvM-UC-Lb1"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="418" y="49"/>

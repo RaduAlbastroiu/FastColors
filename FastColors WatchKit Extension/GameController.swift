@@ -14,9 +14,7 @@ class GameController: WKInterfaceController {
     @IBOutlet weak var LeftButton: WKInterfaceButton!
     @IBOutlet weak var RightButton: WKInterfaceButton!
     
-    @IBOutlet weak var ScoreLabel: WKInterfaceGroup!
     @IBOutlet weak var TopLabel: WKInterfaceLabel!
-    @IBOutlet weak var Timer: WKInterfaceTimer!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
