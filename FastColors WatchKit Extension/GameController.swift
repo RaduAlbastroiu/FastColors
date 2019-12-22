@@ -16,11 +16,13 @@ class GameController: WKInterfaceController {
     
     @IBOutlet weak var TopLabel: WKInterfaceLabel!
     
-    let colors = [UIColor.blue, UIColor.red, UIColor.green, UIColor.orange]
-    let colorNames = [UIColor.red:"Red", UIColor.blue:"Blue", UIColor.green:"Green", UIColor.orange: "Orange"]
+    let colors = [UIColor.blue, UIColor.red, UIColor.green, UIColor.orange, UIColor.yellow, UIColor.purple, UIColor.darkGray, UIColor.white, UIColor.gray]
+    let colorNames = [UIColor.red:"Red", UIColor.blue:"Blue", UIColor.green:"Green", UIColor.orange: "Orange", UIColor.yellow: "Yellow", UIColor.purple: "Purple", UIColor.darkGray: "DarkGray", UIColor.white: "White", UIColor.gray: "Gray"]
     var leftColor = UIColor.orange
     var rightColor = UIColor.orange
     var solutionColor = UIColor.orange
+    var lastWrongColor = UIColor.orange
+    var lastSolutionColor = UIColor.orange
     var wrongColor = UIColor.orange
     var score = 0
     
@@ -41,10 +43,22 @@ class GameController: WKInterfaceController {
         repeat {
         solutionColor = colors.randomElement()!;
         wrongColor = colors.randomElement()!;
-        } while(solutionColor == wrongColor)
+        } while(solutionColor == wrongColor ||
+            solutionColor == lastSolutionColor ||
+            wrongColor == lastSolutionColor ||
+            solutionColor == lastWrongColor ||
+            wrongColor == lastWrongColor)
+        
+        lastSolutionColor = solutionColor
+        lastWrongColor = wrongColor
         
         TopLabel.setText(colorNames[solutionColor])
-        TopLabel.setTextColor(wrongColor)
+        
+        if Bool.random() {
+            TopLabel.setTextColor(wrongColor)
+        } else {
+            TopLabel.setTextColor(solutionColor)
+        }
     
         if Bool.random() {
             leftColor = solutionColor

@@ -18,12 +18,12 @@
                         </group>
                         <group width="1" height="0.59999999999999998" alignment="left" id="ZnZ-hw-Vtd">
                             <items>
-                                <button width="0.5" widthAdjustment="-1" height="0.90000000000000002" alignment="left" verticalAlignment="center" title="Button" id="aYM-FT-0Sk">
+                                <button width="0.5" widthAdjustment="-1" height="0.90000000000000002" alignment="left" verticalAlignment="center" id="aYM-FT-0Sk">
                                     <connections>
                                         <action selector="LeftButtonPressed" destination="8pH-el-N42" id="hMd-v9-W9P"/>
                                     </connections>
                                 </button>
-                                <button width="0.5" widthAdjustment="-1" height="0.90000000000000002" alignment="right" verticalAlignment="center" title="Button" id="wMC-Gl-kbP">
+                                <button width="0.5" widthAdjustment="-1" height="0.90000000000000002" alignment="right" verticalAlignment="center" id="wMC-Gl-kbP">
                                     <connections>
                                         <action selector="RightButtonPressed" destination="8pH-el-N42" id="wt1-PV-NvG"/>
                                     </connections>
