@@ -11,12 +11,15 @@
             <objects>
                 <controller fullScreen="YES" id="8pH-el-N42" customClass="GameController" customModule="FastColors_WatchKit_Extension">
                     <items>
-                        <group width="1" height="0.40000000000000002" alignment="left" layout="vertical" id="3yT-ur-GC0">
+                        <group width="1" height="0.34999999999999998" alignment="left" layout="vertical" id="3yT-ur-GC0">
                             <items>
-                                <label width="1" height="0.5" alignment="center" text="ColorLabel" textAlignment="center" id="egL-08-gPY"/>
+                                <label width="1" height="0.5" alignment="center" verticalAlignment="bottom" text="ColorLabel" textAlignment="center" id="egL-08-gPY">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                </label>
+                                <label width="1" height="0.29999999999999999" alignment="center" verticalAlignment="bottom" text="0:000" textAlignment="center" id="lPR-bi-prO"/>
                             </items>
                         </group>
-                        <group width="1" height="0.59999999999999998" alignment="left" id="ZnZ-hw-Vtd">
+                        <group width="1" height="0.65000000000000002" alignment="left" verticalAlignment="bottom" id="ZnZ-hw-Vtd">
                             <items>
                                 <button width="0.5" widthAdjustment="-1" height="0.90000000000000002" alignment="left" verticalAlignment="center" id="aYM-FT-0Sk">
                                     <connections>
@@ -34,6 +37,7 @@
                     <connections>
                         <outlet property="LeftButton" destination="aYM-FT-0Sk" id="gSR-Nj-hpH"/>
                         <outlet property="RightButton" destination="wMC-Gl-kbP" id="g6D-rw-zuG"/>
+                        <outlet property="TimerLabel" destination="lPR-bi-prO" id="9We-Y7-WmY"/>
                         <outlet property="TopLabel" destination="egL-08-gPY" id="NOf-28-TKI"/>
                     </connections>
                 </controller>
@@ -43,7 +47,7 @@
         <!--Interface Controller-->
         <scene sceneID="3wo-Ca-uhO">
             <objects>
-                <controller id="rBc-hR-NRT" customClass="InterfaceController" customModule="FastColors_WatchKit_Extension">
+                <controller fullScreen="YES" id="rBc-hR-NRT" customClass="InterfaceController" customModule="FastColors_WatchKit_Extension">
                     <items>
                         <group width="1" height="0.5" alignment="left" id="oHL-tM-QcJ">
                             <items>
