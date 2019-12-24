@@ -15,6 +15,7 @@ class GameController: WKInterfaceController {
     @IBOutlet weak var RightButton: WKInterfaceButton!
     
     @IBOutlet weak var TopLabel: WKInterfaceLabel!
+    @IBOutlet weak var TimerLabel: WKInterfaceLabel!
     
     let colors = [UIColor.blue, UIColor.red, UIColor.green, UIColor.orange, UIColor.yellow, UIColor.purple, UIColor.darkGray, UIColor.white, UIColor.gray]
     let colorNames = [UIColor.red:"Red", UIColor.blue:"Blue", UIColor.green:"Green", UIColor.orange: "Orange", UIColor.yellow: "Yellow", UIColor.purple: "Purple", UIColor.darkGray: "DarkGray", UIColor.white: "White", UIColor.gray: "Gray"]
@@ -24,6 +25,9 @@ class GameController: WKInterfaceController {
     var lastWrongColor = UIColor.orange
     var lastSolutionColor = UIColor.orange
     var wrongColor = UIColor.orange
+    var startTime: Double = 0
+    var time: Double = 0
+    var timer : Timer?
     var score = 0
     
     override func awake(withContext context: Any?) {
@@ -34,8 +38,33 @@ class GameController: WKInterfaceController {
         RightButton.setBackgroundColor(rightColor)
         
         TopLabel.setText("Press any button to start")
+        startNewGame()
+    }
+    
+    func startNewGame() {
+        
+        startTime = Date().timeIntervalSinceReferenceDate
+        
+        timer = Timer.scheduledTimer(timeInterval: 0.05,
+        target: self,
+        selector: #selector(self.timerFired(aTimer:)),
+        userInfo: nil,
+        repeats: true)
         
         generateRound()
+    }
+    
+    @objc func timerFired(aTimer: Timer) {
+        //Total time since timer started, in seconds
+        time = Date().timeIntervalSinceReferenceDate - startTime
+
+        //The rest of your code goes here
+
+        //Convert the time to a string with 2 decimal places
+        let timeString = String(format: "%.2f", time)
+
+        //Display the time string to a label in our view controller
+        TimerLabel.setText(timeString)
     }
     
     func generateRound() {
