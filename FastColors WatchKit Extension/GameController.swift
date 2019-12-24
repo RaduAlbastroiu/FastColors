@@ -17,8 +17,8 @@ class GameController: WKInterfaceController {
     @IBOutlet weak var TopLabel: WKInterfaceLabel!
     @IBOutlet weak var TimerLabel: WKInterfaceLabel!
     
-    let colors = [UIColor.blue, UIColor.red, UIColor.green, UIColor.orange, UIColor.yellow, UIColor.purple, UIColor.darkGray, UIColor.white, UIColor.gray]
-    let colorNames = [UIColor.red:"Red", UIColor.blue:"Blue", UIColor.green:"Green", UIColor.orange: "Orange", UIColor.yellow: "Yellow", UIColor.purple: "Purple", UIColor.darkGray: "DarkGray", UIColor.white: "White", UIColor.gray: "Gray"]
+    let colors = [UIColor.blue, UIColor.red, UIColor.green, UIColor.orange, UIColor.yellow, UIColor.purple, UIColor.darkGray, UIColor.white, UIColor.cyan]
+    let colorNames = [UIColor.red:"Red", UIColor.blue:"Blue", UIColor.green:"Green", UIColor.orange: "Orange", UIColor.yellow: "Yellow", UIColor.purple: "Purple", UIColor.darkGray: "DarkGray", UIColor.white: "White", UIColor.cyan: "Cyan"]
     var leftColor = UIColor.orange
     var rightColor = UIColor.orange
     var solutionColor = UIColor.orange
@@ -29,6 +29,8 @@ class GameController: WKInterfaceController {
     var time: Double = 0
     var timer : Timer?
     var score = 0
+    var timeIncrementIndex = 0
+    var timeIncrements = [1.5, 1.25, 1.0, 0.9, 0.8, 0.7, 0.65, 0.6, 1, 0.55, 0.5, 0.45, 0.4, 0.35, 0.75, 0.3, 0.25, 0.2, 0.175, 0.15, 0.125, 0.1, 0.075, 0.05, 0.025]
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -43,7 +45,12 @@ class GameController: WKInterfaceController {
     
     func startNewGame() {
         
+        score = 0
+        timeIncrementIndex = 0
+        
+        timer?.invalidate()
         startTime = Date().timeIntervalSinceReferenceDate
+        startTime += 3
         
         timer = Timer.scheduledTimer(timeInterval: 0.05,
         target: self,
@@ -55,15 +62,15 @@ class GameController: WKInterfaceController {
     }
     
     @objc func timerFired(aTimer: Timer) {
-        //Total time since timer started, in seconds
-        time = Date().timeIntervalSinceReferenceDate - startTime
+        time = startTime - Date().timeIntervalSinceReferenceDate
+        
+        if(time < 0) {
+            stopGame(title: "Time's Up!", message: "")
+            return
+        }
 
-        //The rest of your code goes here
-
-        //Convert the time to a string with 2 decimal places
         let timeString = String(format: "%.2f", time)
 
-        //Display the time string to a label in our view controller
         TimerLabel.setText(timeString)
     }
     
@@ -106,14 +113,26 @@ class GameController: WKInterfaceController {
     func evalMove(color: UIColor) {
         if color == solutionColor {
             score += 1
+            startTime += timeIncrements[timeIncrementIndex]
+            
+            if(score % 5 == 0) {
+                timeIncrementIndex += 1
+            }
+            
             self.generateRound()
         } else {
-            let playAgain = WKAlertAction(title: "Play Again", style: .default) {
-                self.score = 0
-                self.generateRound()
-            }
-            presentAlert(withTitle: "Game over!", message: "You scored \(self.score).", preferredStyle: .alert, actions: [playAgain])
+            time = startTime - Date().timeIntervalSinceReferenceDate
+            let timeString = String(format: "%.2f", time)
+            stopGame(title: "Wrong Color!", message: "")
         }
+    }
+    
+    func stopGame(title: String, message: String) {
+        timer?.invalidate()
+        let playAgain = WKAlertAction(title: "Play Again", style: .default) {
+            self.startNewGame()
+        }
+        presentAlert(withTitle: title, message: "You scored \(self.score).\n" + message , preferredStyle: .alert, actions: [playAgain])
     }
     
     @IBAction func LeftButtonPressed() {

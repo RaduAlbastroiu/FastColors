@@ -14,7 +14,7 @@
                         <group width="1" height="0.34999999999999998" alignment="left" layout="vertical" id="3yT-ur-GC0">
                             <items>
                                 <label width="1" height="0.5" alignment="center" verticalAlignment="bottom" text="ColorLabel" textAlignment="center" id="egL-08-gPY">
-                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
                                 </label>
                                 <label width="1" height="0.29999999999999999" alignment="center" verticalAlignment="bottom" text="0:000" textAlignment="center" id="lPR-bi-prO"/>
                             </items>
