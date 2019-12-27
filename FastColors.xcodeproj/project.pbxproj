@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA2D506A23AB810000B906B2 /* FastColors WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DA2D506923AB810000B906B2 /* FastColors WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA02C22123B653EA00352567 /* ComplicationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02C22023B653EA00352567 /* ComplicationsController.swift */; };
+		DA2D506A23AB810000B906B2 /* FastColors.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DA2D506923AB810000B906B2 /* FastColors.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA2D507023AB810000B906B2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2D506E23AB810000B906B2 /* Interface.storyboard */; };
 		DA2D507223AB810200B906B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2D507123AB810200B906B2 /* Assets.xcassets */; };
 		DA2D507923AB810200B906B2 /* FastColors WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA2D507823AB810200B906B2 /* FastColors WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -52,7 +53,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				DA2D506A23AB810000B906B2 /* FastColors WatchKit App.app in Embed Watch Content */,
+				DA2D506A23AB810000B906B2 /* FastColors.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,8 +61,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA02C22023B653EA00352567 /* ComplicationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationsController.swift; sourceTree = "<group>"; };
 		DA2D506523AB810000B906B2 /* FastColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA2D506923AB810000B906B2 /* FastColors WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FastColors WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2D506923AB810000B906B2 /* FastColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2D506F23AB810000B906B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		DA2D507123AB810200B906B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2D507323AB810200B906B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2D506523AB810000B906B2 /* FastColors.app */,
-				DA2D506923AB810000B906B2 /* FastColors WatchKit App.app */,
+				DA2D506923AB810000B906B2 /* FastColors.app */,
 				DA2D507823AB810200B906B2 /* FastColors WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -121,6 +123,7 @@
 				DA2D508123AB810300B906B2 /* Assets.xcassets */,
 				DA2D508323AB810300B906B2 /* Info.plist */,
 				DA2D509323AD317C00B906B2 /* GameController.swift */,
+				DA02C22023B653EA00352567 /* ComplicationsController.swift */,
 			);
 			path = "FastColors WatchKit Extension";
 			sourceTree = "<group>";
@@ -159,7 +162,7 @@
 			);
 			name = "FastColors WatchKit App";
 			productName = "FastColors WatchKit App";
-			productReference = DA2D506923AB810000B906B2 /* FastColors WatchKit App.app */;
+			productReference = DA2D506923AB810000B906B2 /* FastColors.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		DA2D507723AB810200B906B2 /* FastColors WatchKit Extension */ = {
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2D508023AB810200B906B2 /* ExtensionDelegate.swift in Sources */,
+				DA02C22123B653EA00352567 /* ComplicationsController.swift in Sources */,
 				DA2D509423AD317C00B906B2 /* GameController.swift in Sources */,
 				DA2D507E23AB810200B906B2 /* InterfaceController.swift in Sources */,
 			);
@@ -451,7 +455,7 @@
 				IBSC_MODULE = FastColors_WatchKit_Extension;
 				INFOPLIST_FILE = "FastColors WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ducu.FastColors.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FastColors;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -470,7 +474,7 @@
 				IBSC_MODULE = FastColors_WatchKit_Extension;
 				INFOPLIST_FILE = "FastColors WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ducu.FastColors.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FastColors;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
